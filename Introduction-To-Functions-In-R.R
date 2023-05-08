@@ -9,6 +9,15 @@ myFunction1 <- function(radius) {
 
 myFunction1(2);
 
+# Exercise 2
+# Write a function to calculate the following: f(x) = (x^(2) + y(2))^(1/2) for 
+# x = 1,2, ,10 , y = 1,2, ,10 and x = y
+myFunction2 <- function(x, y) {
+  return(sqrt(x^(2)+y^(2)));
+}
+
+myFunction2(1:10, 1:10);
+
 
 
 
