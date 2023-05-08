@@ -4,7 +4,7 @@
 # radius equal to 2, i.e., with the argument {2}.
 
 myFunction1 <- function(radius) {
-  return(2*pi*radius)
+  return(2*pi*radius);
 }
 
 myFunction1(2);
@@ -45,7 +45,16 @@ myEquation <- function(x) {
 curve(myEquation, from = -2, to = 4, xlab="x", ylab="y");
 
 # Determine the global maximum of f on the interval -2<=x<=4
-optimise(myEquation, lower = -2, upper = 4, maximum = TRUE)
+optimise(myEquation, lower = -2, upper = 4, maximum = TRUE);
 
 # Determine the global minimum of f on the interval -2<=x<=4
-optimize(myEquation, lower = -2, upper = 4, maximum = FALSE)
+optimize(myEquation, lower = -2, upper = 4, maximum = FALSE);
+
+
+# Exercise 5
+# For the values i = 1 to 5, print the square of i.
+myNumbers = 1:5;
+for (number in myNumbers) {
+  print(number^(2));
+}
+
