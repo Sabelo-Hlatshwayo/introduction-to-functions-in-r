@@ -28,5 +28,24 @@ myFunction3 <- function(x, y) {
   return(list("Square root of sum of squares" = output1, "Square root of product" = output2));
 }
 
-myFunction3(2,4);
+x = myFunction3(2,4);
 
+x$"Square root of sum of squares";
+x$"Square root of product";
+
+# Exercise 4
+# Consider the following equation: f(x) = -x^(2) + 2*x + 3. Create a function of this equation, use the curve() function 
+# to plot the equation for the interval -2<=x<=4, and use the optimize() function to find the global maximum.
+
+myEquation <- function(x) {
+  return(-x^(2)+2*x+3);
+}
+
+# Plot the graph of f on the interval -2<=x<=4
+curve(myEquation, from = -2, to = 4, xlab="x", ylab="y");
+
+# Determine the global maximum of f on the interval -2<=x<=4
+optimise(myEquation, lower = -2, upper = 4, maximum = TRUE)
+
+# Determine the global minimum of f on the interval -2<=x<=4
+optimize(myEquation, lower = -2, upper = 4, maximum = FALSE)
