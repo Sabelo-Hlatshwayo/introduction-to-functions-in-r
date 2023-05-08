@@ -54,7 +54,14 @@ optimize(myEquation, lower = -2, upper = 4, maximum = FALSE);
 # Exercise 5
 # For the values i = 1 to 5, print the square of i.
 myNumbers = 1:5;
-for (number in myNumbers) {
-  print(number^(2));
+for (i in myNumbers) {
+  print(i^(2));
+}
+
+# Exercise 6
+# Print a phrase where the year changes for each phrase from 2015 to 2023
+myYears = 2015:2023;
+for (i in myYears) {
+  print.noquote(paste("The year is", i));
 }
 
